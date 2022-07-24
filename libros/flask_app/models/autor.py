@@ -19,5 +19,7 @@ class Autor:
             autores.append(cls(i))
         return autores
 
-
-    
+if __name__ == '__main__':
+    autoress = Autor.todos_autores()
+    autoress_sql_query = autores_db
+    print("Primer testeo, autores:", autoress, "Su query:", autoress_sql_query)
