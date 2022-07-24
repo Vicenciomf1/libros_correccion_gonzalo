@@ -4,7 +4,9 @@ from flask_app.models.libro import Libro
 
 @app.route('/libros')
 def nuevo_libro():
-    return render_template('libros.html', libros=Libro.todos_libros())
+    libross = Libro.todos_libros()
+    print("segundo testeo libros:", libross) #Segundo testeo
+    return render_template('libros.html', libros=libross)
 
 @app.route('/crear/libro', methods= ['POST'])
 def crear():
