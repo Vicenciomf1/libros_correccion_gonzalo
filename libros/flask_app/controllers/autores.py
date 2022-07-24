@@ -5,7 +5,7 @@ from flask_app.models.autor import Autor
 @app.route('/')
 def index():
     autoress = Autor.todos_autores()
-    print("segundo testeo:", autoress) #Ssegundo testeo
+    print("segundo testeo libros:", autoress) #Segundo testeo
     return render_template('index.html', autores=autoress)
 
 @app.route('/crear/autor', methods= ['POST'])
