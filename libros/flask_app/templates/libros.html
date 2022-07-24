@@ -13,6 +13,7 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Recuerda linkear tu CSS desde la carpeta de estáticos con un url_for, o incluir la CDN de bootstrap si usarás Bootstrap para tu CSS -->
             <title>Autores</title>
         </head>
         <body>
@@ -33,7 +34,7 @@
                 <div>
                     <h1>Todos los libros</h1>
                 <div>
-                    <table>
+                    <table> <!-- Falta el thead con los th para el encabezado de la tabla, ojo con eso -->
                         <tbody>
                             {% for d in libros %}
                             <tr>
