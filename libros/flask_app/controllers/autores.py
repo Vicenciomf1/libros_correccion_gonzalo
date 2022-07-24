@@ -4,7 +4,9 @@ from flask_app.models.autor import Autor
 
 @app.route('/')
 def index():
-    return render_template('index.html', autores=Autor.todos_autores())
+    autoress = Autor.todos_autores()
+    print("segundo testeo:", autoress) #Ssegundo testeo
+    return render_template('index.html', autores=autoress)
 
 @app.route('/crear/autor', methods= ['POST'])
 def crear_autor():
